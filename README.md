@@ -11,4 +11,4 @@
 ### Abrir el proyecto
 1. Clonar el repositorio
 2. Abrir firmware desde VS Code
-3. Verificar XIAO_ESP32SE antes de compilar
+3. Verificar XIAO_ESP32S3 antes de compilar
