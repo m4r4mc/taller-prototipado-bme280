@@ -1,4 +1,4 @@
-// codigo principal
+// codigo principal aymara
 // Channel ID: 3464038
 
 
