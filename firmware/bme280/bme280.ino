@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // codigo principal aymara
+=======
+// codigo principal miranda
+>>>>>>> edc82604b334b9618f8c1406ff5fac774b476e02
 // Channel ID: 3464038
 
 
