@@ -1,4 +1,4 @@
-// codigo principal
+// codigo principal miranda
 // Channel ID: 3464038
 
 
