@@ -8,6 +8,7 @@
 #include <Adafruit_BME280.h>
 #include <ThingSpeak.h>
 
-const char* ssid = "wifi";
-const char* password = "contra";
+const char* ssid = "LaboratorioDelta";
+const char* password = "labdelta21!";
 const char* WriteAPIKey = "I94PJNZYX31GQFPE";
+
