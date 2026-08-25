@@ -9,7 +9,7 @@
 #include <ThingSpeak.h>
 
 const char* ssid = "Nombre red WiFi";
-const char* password = "contra";
+const char* password = "contra WiFi";
 unsigned long myChannelNumber = 3464038;
 const char* WriteAPIKey = "I94PJNZYX31GQFPE";
 
@@ -29,4 +29,32 @@ void setup(){
 
     Wire.begin(SDA_PIN, SLC_PIN);
     
+    //Inicializar Adafruit_BME280
+
+     bool bm0k = b,e.begin(0x76, &Wire);   //comunica con bme280 n i2c 0x76
+     if (!bme0k){
+        Serial.println("Error: no se detceta BME280");
+     } else{
+        Serial.println("BME280 conectado")
+     }
+     
+     //leer bme280
+     float temp = 0, hum =0, p = 0;
+     if (bme0k){
+        temp = bme.readTemperature();
+        hum = bme.readHumidity();
+        p = bme.readPressure()/100F;
+     }
+     //mostrar datos
+     //conexion WiFi
+     //enviar datos a ThingSpeak
+     ThingSpeak.setField(1, temp);
+     ThingSpeak.setField(2, hum);
+     ThingSpeak.setField(3, p);
+
+     //apagar
+     //deep time_sleep
+
+void loop(){
+
 }
