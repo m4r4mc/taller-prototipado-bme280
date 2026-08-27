@@ -11,7 +11,7 @@
 const char* ssid = "Nombre red WiFi";
 const char* password = "contra WiFi";
 unsigned long myChannelNumber = 3464038;
-const char* WriteAPIKey = "I94PJNZYX31GQFPE";
+const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //el write api se borra despues
 
 #define time_sleep 300
 #define factor 1000000ULL
@@ -33,7 +33,7 @@ void setup(){
 
      bool bm0k = b,e.begin(0x76, &Wire);   //comunica con bme280 n i2c 0x76
      if (!bme0k){
-        Serial.println("Error: no se detceta BME280");
+        Serial.println("Error: no se detecta BME280");
      } else{
         Serial.println("BME280 conectado")
      }
