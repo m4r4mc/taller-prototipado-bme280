@@ -13,6 +13,8 @@ const char* password = "contra WiFi";
 unsigned long myChannelNumber = 3464038;
 const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //el write api se borra despues
 
+const int sleepTime = 10000; //ajustar tiempo con bateria
+
 #define time_sleep 300
 #define factor 1000000ULL
 #define SDA_PIN D4;
@@ -53,7 +55,10 @@ void setup(){
      ThingSpeak.setField(3, p);
 
      //apagar
+
+
      //deep time_sleep
+
 
 void loop(){
 
