@@ -8,8 +8,8 @@
 #include <Adafruit_BME280.h>
 #include <ThingSpeak.h>
 
-const char* ssid = "Nombre red WiFi";
-const char* password = "contra WiFi";
+const char* ssid = "LaboratorioDelta";
+const char* password = "labdelta21";
 unsigned long myChannelNumber = 3464038;
 const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //el write api se borra despues
 
