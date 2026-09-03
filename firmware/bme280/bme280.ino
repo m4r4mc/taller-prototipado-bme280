@@ -40,7 +40,7 @@ oled.setFont(u8g2_font_6x10_tf);
 oled.drawStr(0, 10, "Iniciando");
 oled.senBuffer();
 
-if (!bme.begin(0x76)){
+if (!bme.begin(0x76)){ //bme280
    Serial.println("BME280 no encontrado");
    oled.clearBuffer();
    oled.drawStr(0, 10,"Error BME280");
@@ -51,6 +51,6 @@ if (!bme.begin(0x76)){
 
 Serial.println("BME280 iniciando")
 
-Serial.println("Conectando WiFi");
+Serial.println("Conectando WiFi"); // conexion al wifi
 WiFi.begin(ssid, password);
 while (WiFi.status() != WL_CONNECTED);
