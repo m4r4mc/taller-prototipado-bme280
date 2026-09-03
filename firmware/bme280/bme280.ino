@@ -4,20 +4,24 @@
 
 #include <WiFi.h>
 #include <Wire.h> // i2c
+
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
-#include <ThingSpeak.h>
+
+#include <Adafruit_GFX.h>
 #include <U8g2lib.h> //pantalla
+
+#include <ThingSpeak.h>
 
 const char* ssid = "LaboratorioDelta";
 const char* password = "labdelta21";
 unsigned long myChannelNumber = 3464038;
-const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //el write api se borra despues
+const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //el write api se borra despues eh
 
-const int sleepTime = 10000; //ajustar tiempo con bateria
+const int sleepTime = 10000; //ajustar tiempo con bateria // 1s entre mediciones
 
-#define time_sleep 300
-#define factor 1000000ULL
+#define time_sleep 
+#define factor 
 #define SDA_PIN D4;
 #define SCL_PIN D5;
 
