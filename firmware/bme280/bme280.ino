@@ -53,4 +53,20 @@ Serial.println("BME280 iniciando")
 
 Serial.println("Conectando WiFi"); // conexion al wifi
 WiFi.begin(ssid, password);
-while (WiFi.status() != WL_CONNECTED);
+while (WiFi.status() != WL_CONNECTED);{
+   delay(500);
+   Serial.println(".");
+}
+
+Serial.println();
+Serial.println("WiFi conectado");
+Serial.println("IP: ");
+Serial.println(wiFi.localIP());
+
+ThingSpeak.begin(client);
+
+oled.clearBuffer();
+oled.drawStr(0, 10, "Iniciando");
+oled.sendBuffer();
+delay(2000);
+
