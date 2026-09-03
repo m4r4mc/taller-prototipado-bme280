@@ -7,6 +7,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 #include <ThingSpeak.h>
+#include <U8g2lib.h> //pantalla
 
 const char* ssid = "LaboratorioDelta";
 const char* password = "labdelta21";
