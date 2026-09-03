@@ -17,7 +17,7 @@ const char* ssid = "LaboratorioDelta"; //wifi
 const char* password = "labdelta21";
 
 unsigned long myChannelNumber = 3464038; //thingspeak
-const char* WriteAPIKey = "I94PJNZYX31GQFPE";
+const char* WriteAPIKey = "I94PJNZYX31GQFPE"; //esto se quita despues
 WiFiClient client;
 
 
