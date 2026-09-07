@@ -106,8 +106,19 @@ void loop(){
       oled.print(presion, 2);
       oled.print(" hPa");
 
-      
-      
+      oled.sendBuffer();
+   }
 
+   if (tiempoActual - tiempoThingSpeak >= intervaloThingSpeak){
+      tiempoThingSpeak = tiempoActual;
+
+      ThingSpeak.setField(1, temperatura);
+      ThingSpeak.setField(2, Humedad);
+      ThingSpeak.setField(3, Presion);
+
+      int respuesta = ThingSpeak.writeFields(
+         myChannelNumber,
+         
+      )
    }
 }
